@@ -11,8 +11,7 @@ $(document).ready(function(){
 // sign up form code
 // -----------------------------------------------------------------
 
-console.log("Works")
-
+// validation functions
 password.change(function (){
     if(password.val() != confirm_password.val()) {
         confirm_password.setCustomValidity("Passwords Don't Match");
@@ -47,6 +46,11 @@ $("#signUpForm").submit(function(event){
     $(this).addClass('was-validated');
 
 });
+
+
+// api calls
+
+
 
 });
 
